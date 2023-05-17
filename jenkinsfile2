@@ -21,5 +21,3 @@ stage('continous download')
   {
     deploy adapters: [tomcat9(credentialsId: 'fabbad13-9982-4155-bf93-2c6669c8e918', path: '', url: 'http://172.31.17.169:8080')], contextPath: 'projectk', war: '**/*.war'
   }  
-}
-
